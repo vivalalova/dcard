@@ -23,6 +23,7 @@
 		9E0DFA0924C72B4300FA3BB7 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DFA0524C72B4300FA3BB7 /* PostView.swift */; };
 		9E0DFA0A24C72B4300FA3BB7 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DFA0624C72B4300FA3BB7 /* PostsView.swift */; };
 		9E0DFA1124C72E0400FA3BB7 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9E0DFA1024C72E0400FA3BB7 /* KingfisherSwiftUI */; };
+		9E0DFA1324C735F000FA3BB7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DFA1224C735F000FA3BB7 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		9E0DFA0524C72B4300FA3BB7 /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		9E0DFA0624C72B4300FA3BB7 /* PostsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		9E0DFA0B24C72BF200FA3BB7 /* card.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = card.entitlements; sourceTree = "<group>"; };
+		9E0DFA1224C735F000FA3BB7 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		9E0DFA0E24C72D3100FA3BB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9E0DFA1224C735F000FA3BB7 /* MenuView.swift */,
 				9E0DFA0624C72B4300FA3BB7 /* PostsView.swift */,
 				9E0DFA0524C72B4300FA3BB7 /* PostView.swift */,
 			);
@@ -328,6 +331,7 @@
 				9E0DF9FC24C72B0500FA3BB7 /* API.swift in Sources */,
 				9E0DFA0124C72B3700FA3BB7 /* Board.swift in Sources */,
 				9E0DFA0A24C72B4300FA3BB7 /* PostsView.swift in Sources */,
+				9E0DFA1324C735F000FA3BB7 /* MenuView.swift in Sources */,
 				9E0DFA0224C72B3700FA3BB7 /* Comment.swift in Sources */,
 				9E0DFA0924C72B4300FA3BB7 /* PostView.swift in Sources */,
 				9E0DF9F324C72A7C00FA3BB7 /* Mock.swift in Sources */,
