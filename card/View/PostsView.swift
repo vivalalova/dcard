@@ -9,6 +9,7 @@
 import Combine
 import FetchSwift
 import SwiftUI
+import KingfisherSwiftUI
 
 struct PostsView: View {
     @State var posts: [Post] = []
@@ -52,11 +53,11 @@ struct Cell: View {
 
     var body: some View {
         HStack {
-//            KFImage(url)
-//                .resizable()
-//                .aspectRatio(contentMode: .fill)
-//                .frame(width: 80, height: 60)
-//                .clipped()
+            KFImage(url)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 80, height: 60)
+                .clipped()
 
             VStack(alignment: .leading) {
                 Text(post.title ?? "")
@@ -92,6 +93,7 @@ struct Cell: View {
 struct PostViews_Previews: PreviewProvider {
     static var previews: some View {
         PostsView(posts: [Mock.post])
-//            .allPreviewDevices()
+            .previewDevice("iPhone 11 Pro")
+
     }
 }

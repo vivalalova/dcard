@@ -20,7 +20,6 @@
 		9E0DFA0024C72B3700FA3BB7 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DF9FD24C72B3700FA3BB7 /* Posts.swift */; };
 		9E0DFA0124C72B3700FA3BB7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DF9FE24C72B3700FA3BB7 /* Board.swift */; };
 		9E0DFA0224C72B3700FA3BB7 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DF9FF24C72B3700FA3BB7 /* Comment.swift */; };
-		9E0DFA0824C72B4300FA3BB7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DFA0424C72B4300FA3BB7 /* MenuView.swift */; };
 		9E0DFA0924C72B4300FA3BB7 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DFA0524C72B4300FA3BB7 /* PostView.swift */; };
 		9E0DFA0A24C72B4300FA3BB7 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0DFA0624C72B4300FA3BB7 /* PostsView.swift */; };
 		9E0DFA1124C72E0400FA3BB7 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9E0DFA1024C72E0400FA3BB7 /* KingfisherSwiftUI */; };
@@ -62,7 +61,6 @@
 		9E0DF9FD24C72B3700FA3BB7 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		9E0DF9FE24C72B3700FA3BB7 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		9E0DF9FF24C72B3700FA3BB7 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		9E0DFA0424C72B4300FA3BB7 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		9E0DFA0524C72B4300FA3BB7 /* PostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		9E0DFA0624C72B4300FA3BB7 /* PostsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		9E0DFA0B24C72BF200FA3BB7 /* card.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = card.entitlements; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 		9E0DFA0E24C72D3100FA3BB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9E0DFA0424C72B4300FA3BB7 /* MenuView.swift */,
 				9E0DFA0624C72B4300FA3BB7 /* PostsView.swift */,
 				9E0DFA0524C72B4300FA3BB7 /* PostView.swift */,
 			);
@@ -330,7 +327,6 @@
 				9E0DF9FA24C72AD300FA3BB7 /* View+.swift in Sources */,
 				9E0DF9FC24C72B0500FA3BB7 /* API.swift in Sources */,
 				9E0DFA0124C72B3700FA3BB7 /* Board.swift in Sources */,
-				9E0DFA0824C72B4300FA3BB7 /* MenuView.swift in Sources */,
 				9E0DFA0A24C72B4300FA3BB7 /* PostsView.swift in Sources */,
 				9E0DFA0224C72B3700FA3BB7 /* Comment.swift in Sources */,
 				9E0DFA0924C72B4300FA3BB7 /* PostView.swift in Sources */,

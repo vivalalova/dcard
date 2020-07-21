@@ -86,13 +86,6 @@ struct PostView: View {
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
         PostView(post: Mock.post)
-//            .iPhone11()
-//            .previewDevice(.iPhone11Pro)
-//            .allPreviewDevices()
-//            .allPreviewDevices(deviceTypes: .iPhone)
-//            .previewDisplayName("Normal (Light)")
-
-//            .preview(with: [.all])
-//            .preview(with: [.iPhone8])
+            .previewDevice("iPhone 11 Pro")
     }
 }
