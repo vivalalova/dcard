@@ -34,10 +34,10 @@ struct PostView: View {
                     ForEach(pictures, id: \.absoluteString) { picture in
                         KFImage(picture)
 //                        FetchImage(picture)
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .clipped()
-//                            .frame(maxHeight: 800)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .clipped()
+                            .frame(maxHeight: 800)
                     }
 
                     VStack(alignment: .leading) {
