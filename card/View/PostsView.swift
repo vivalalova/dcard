@@ -30,14 +30,14 @@ struct PostsView: View {
                         .onAppear(perform: self.loadMore)
                 }
             }
-            .navigationBarTitle(DcardAPI.board)
+            .navigationBarTitle(DCardAPI.board)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     func loadMore() {
         self.task?.cancel()
-        self.task = DcardAPI.shared.posts(lastId: self.posts.last?.id).sink {
+        self.task = DCardAPI.shared.posts(lastId: self.posts.last?.id).sink {
             self.posts.append(contentsOf: $0)
         }
     }

@@ -22,11 +22,11 @@ struct MenuView: View {
                     }
                 }
             }
-            .navigationBarTitle(DcardAPI.board)
+            .navigationBarTitle(DCardAPI.board)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onAppear {
-            self.task = DcardAPI.shared.fourm().assign(to: \.boards, on: self)
+            self.task = DCardAPI.shared.fourm().assign(to: \.boards, on: self)
         }
     }
 }

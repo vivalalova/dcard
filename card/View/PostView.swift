@@ -8,8 +8,8 @@
 
 import Combine
 import FetchSwift
-import SwiftUI
 import KingfisherSwiftUI
+import SwiftUI
 
 struct PostView: View {
     @State var post: Post?
@@ -31,13 +31,13 @@ struct PostView: View {
                     Text(self.post?.content ?? "")
                         .padding(.horizontal)
 
-                    ForEach(pictures, id: \.absoluteString) { picture in
-                        KFImage(picture)
-//                        FetchImage(picture)
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .clipped()
-//                            .frame(maxHeight: 800)
+                    VStack(spacing: 0) {
+                        ForEach(pictures, id: \.absoluteString) { picture in
+                            KFImage(picture)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .clipped()
+                        }
                     }
 
                     VStack(alignment: .leading) {
@@ -54,13 +54,13 @@ struct PostView: View {
                     return
                 }
 
-                self.task = DcardAPI.shared.post(id: id).assign(to: \.post, on: self)
+                self.task = DCardAPI.shared.post(id: id).assign(to: \.post, on: self)
 
                 guard let commentsCount = self.post?.commentCount, commentsCount > 0 else {
                     return
                 }
 
-                self.commentsTask = DcardAPI.shared.comments(id: id, offset: 0).print().assign(to: \.comments, on: self)
+                self.commentsTask = DCardAPI.shared.comments(id: id, offset: 0).print().assign(to: \.comments, on: self)
             }
 //            .print(pictures)
             .print(comments)

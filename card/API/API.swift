@@ -9,14 +9,14 @@ import Combine
 import FetchSwift
 import Foundation
 
-final class DcardAPI: Fetch, ObservableObject {
+final class DCardAPI: Fetch, ObservableObject {
     var domain: String = "https://www.dcard.tw/service/api/v2/"
 
     var decoder: JSONDecoder = JSONDecoder()
 
     var encoder: JSONEncoder = JSONEncoder()
 
-    static let shared = DcardAPI()
+    static let shared = DCardAPI()
 
     func willSend(params: [String: Any], method: FetchSwift.Method, path: String) -> Params {
         params
@@ -33,7 +33,7 @@ final class DcardAPI: Fetch, ObservableObject {
     static let board = "apple"
 }
 
-extension DcardAPI {
+extension DCardAPI {
     func fourm() -> Response<[Board]> {
         self.fetch(path: "forums")
     }
@@ -44,7 +44,7 @@ extension DcardAPI {
             param["before"] = lastId
         }
 
-        return self.fetch(path: "forums/\(DcardAPI.board)/featuredPosts", params: param)
+        return self.fetch(path: "forums/\(DCardAPI.board)/featuredPosts", params: param)
     }
 
     func posts(lastId: Int?) -> Response<[Post]> {
@@ -53,7 +53,7 @@ extension DcardAPI {
             param["before"] = lastId
         }
 
-        return self.fetch(path: "forums/\(DcardAPI.board)/posts", params: param)
+        return self.fetch(path: "forums/\(DCardAPI.board)/posts", params: param)
     }
 
     func post(id: Int) -> Response<Post?> {
