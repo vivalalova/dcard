@@ -26,7 +26,7 @@ struct MenuView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onAppear {
-            self.task = DCardAPI.shared.fourm().assign(to: \.boards, on: self)
+            self.task = DCardAPI.shared.forum().assign(to: \.boards, on: self)
         }
     }
 }

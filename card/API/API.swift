@@ -34,7 +34,7 @@ final class DCardAPI: Fetch, ObservableObject {
 }
 
 extension DCardAPI {
-    func fourm() -> Response<[Board]> {
+    func forum() -> Response<[Board]> {
         self.fetch(path: "forums")
     }
 
